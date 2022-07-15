@@ -1,0 +1,46 @@
+$bg-color:#65c12f;
+
+// 路由内容同一样式
+.content{
+    margin: 10px 0 0 20px;
+}
+
+//  导航条同一样式
+.navigation{
+    height: 30px;
+    div{
+        font-size: 16px;
+        margin-right: 20px;
+        line-height: 30px;
+    }
+    div:hover{
+        cursor: pointer;
+    }
+    .bold{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .bold::after{
+        content: ' ';
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+        height: 3px;
+        border-bottom: 3px solid red;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+// 内容区域
+.content-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .area{
+        width: 85%;
+        min-width: 820px;
+    }
+}

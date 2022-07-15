@@ -1,23 +1,22 @@
 <template>
   <div id="app">
-    <div>你看啊</div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>
+<style lang="scss">
+  body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 1024px;
+    min-height: 562px;
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  }
 </style>
