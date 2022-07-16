@@ -14,13 +14,9 @@ export default {
 <style lang="scss">
     .Main{
         background: #fff;
-        overflow-y: scroll;
         img{
           width: 85%;
           height: 100%;
         }
-    }
-    .Main::-webkit-scrollbar{
-      width: 1px;
     }
 </style>

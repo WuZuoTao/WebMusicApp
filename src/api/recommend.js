@@ -8,3 +8,13 @@ export function carousel(data,options = {}){
         ...options
     })
 }
+
+export function playlist(data,options = {}){
+    console.log(data)
+    return request({
+        url:'/personalized',
+        method:'GET',
+        data:data,
+        ...options
+    })
+}

@@ -17,6 +17,6 @@ export default {
     list-style: none;
     min-width: 1024px;
     min-height: 562px;
-
+    overflow: hidden;
   }
 </style>

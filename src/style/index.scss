@@ -2,12 +2,14 @@ $bg-color:#65c12f;
 
 // 路由内容同一样式
 .content{
-    margin: 10px 0 0 20px;
+    padding: 10px 20px;
+    min-width: 800px;
+    height: 100%;
 }
 
 //  导航条同一样式
 .navigation{
-    height: 30px;
+    height: 50px;
     div{
         font-size: 16px;
         margin-right: 20px;
@@ -17,7 +19,7 @@ $bg-color:#65c12f;
         cursor: pointer;
     }
     .bold{
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 600;
     }
     .bold::after{
@@ -33,14 +35,18 @@ $bg-color:#65c12f;
 .flex{
     display: flex;
 }
-
+// 字体
+.f-w{
+    font-size: 20px;
+    font-weight: 600;
+}
 // 内容区域
 .content-area{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     .area{
         width: 85%;
-        min-width: 820px;
+        min-width: 800px;
+        margin-bottom: 20px;
     }
 }
