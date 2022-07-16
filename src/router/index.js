@@ -8,9 +8,9 @@ export default new VueRouter({
         {
             path:'/',
             component: Layout,
-            redirect: 'discover',
+            redirect: 'discover/recommend',
             children:[{
-                path:'discover',
+                path:'/discover',
                 name:'music',
                 component: () => import('@/views/discoverMusic/index'),
                 children:[{

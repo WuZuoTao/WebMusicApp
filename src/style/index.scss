@@ -50,3 +50,20 @@ $bg-color:#65c12f;
         margin-bottom: 20px;
     }
 }
+
+// 首页内容公共样式
+.recommendItemContent{
+    margin-top: 20px;
+    .recommend-Item-content-font{
+        color: #3b3a39;
+    }
+    .font-size{
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .font-size:hover{
+        cursor: pointer;
+        color: #000;
+    }
+}

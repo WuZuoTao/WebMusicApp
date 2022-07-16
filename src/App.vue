@@ -18,5 +18,6 @@ export default {
     min-width: 1024px;
     min-height: 562px;
     overflow: hidden;
+    font-family: "Microsoft YaHei";
   }
 </style>

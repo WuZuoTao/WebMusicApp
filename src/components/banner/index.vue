@@ -7,8 +7,8 @@
       <!-- 轮播图片 -->
        <div 
        class="banne-item"
-       v-for="item in banner" 
-       :key="item.encodeId"
+       v-for="(item,index) in banner" 
+       :key="'id'+index"
        >
          <img :src="item.imageUrl" alt="" />
        </div>
@@ -17,8 +17,8 @@
       <div class="iconround">
         <div 
         @mouseover="itemcent = index"
-        :class="itemcent == index ? 'rounditemcolor rounditem': 'rounditem'" v-for="(item,index) in banner " 
-        :key="index"
+        :class="itemcent === index ? 'rounditemcolor rounditem': 'rounditem'" v-for="(item,index) in banner " 
+        :key="'_'+index"
         ></div>
       </div>
     </div>
@@ -38,14 +38,14 @@ export default {
     },
     mounted(){
       // api请求
-      carousel({type:0}).then(res => {
+      carousel().then(res => {
         this.banner = res.banners
         // api请求为异步，在里面执行不容易出错(在函数执行的时候还没有拿到数据)
         this.bannerRoll()
       })
       //  定时器 实现图片滚动
       this.bannerTime = setInterval(() => {
-        this.itemcent ++
+        this.itemcent ++  
       },5000)
     }, 
     methods:{
