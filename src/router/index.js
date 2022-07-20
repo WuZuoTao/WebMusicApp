@@ -8,16 +8,22 @@ export default new VueRouter({
         {
             path:'/',
             component: Layout,
-            redirect: 'discover/recommend',
+            redirect: '/discover/recommend',
             children:[{
                 path:'/discover',
                 name:'music',
                 component: () => import('@/views/discoverMusic/index'),
-                children:[{
-                    path:'/discover/recommend',
-                    name:'recommend',
-                    component: () => import('@/views//recommend/index')
-                }]
+                children:[
+                    {
+                        path:'/discover/recommend',
+                        name:'recommend',
+                        component: () => import('@/views/discoverMusic/components/recommend')
+                    },{
+                        path:'/discover/customization',
+                        name:'customization',
+                        component: () => import('@/views/discoverMusic/components/customization')
+                    },
+            ]
             }]
         },
         {

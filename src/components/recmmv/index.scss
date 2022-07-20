@@ -1,0 +1,50 @@
+.recmmv{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    .recmmv-item{
+        width: 32%;
+        .recmmv-item-img{
+            position: relative;
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 5px;
+            }
+            .recmmv-item-icon{
+                font-size: 12px;
+                position: absolute;
+                top: 2%;
+                right: 2%;
+                color: #fff;
+                .icon-bof{
+                    margin-right: 5px;
+                    font-size: 10px;
+                }
+            }
+        }
+        .recmmv-item-img:hover{
+            cursor: pointer;
+        }    
+        .recmmv-item-title{
+            display: inline-block;
+            margin-top: 5px;
+            font-size: 14px;
+            color: rgb(69, 69, 69);
+        }
+        .recmmv-item-title:hover{
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+        }
+        .recmmv-item-name{
+            display: inline-block;
+            margin-top: 5px;
+            font-size: 12px;
+            color: rgb(159, 159, 159);
+        }   
+        .recmmv-item-name:hover{
+            cursor: pointer;
+            color: rgb(86, 86, 86);
+        }
+    }
+}

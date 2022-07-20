@@ -2,20 +2,25 @@
     background: #fff;
     border-right: 1px solid #E5E5E5;
     overflow-y: scroll;
-    padding: 10px 0;
-    div{
+    padding: 10px 0 0 15px;
+    .navBarItem{
         height: 35px;
         line-height: 35px;
-        margin: 2px 0 2px 10px;
+        margin: 2px 0;
         font-size: 14px;
-
+        
     }
-    div:hover{
+    .navBarItem:hover{
         background: #F6F6F7;
         cursor: pointer;
     }
+    .navbar-font{
+        font-size: 16px;
+        font-weight: 600;
+        background: #F6F6F7;
+
+    }
     p{
-        margin: 5px 0 5px 10px;
         font-size: 12px;
         color: #adadb0;
 

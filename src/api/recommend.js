@@ -40,3 +40,13 @@ export function newmusic(data,options = {}){
         ...options
     })
 }
+
+// 推荐MV
+export function recmmv(data,options = {}){
+    return request({
+        url:'/personalized/mv',
+        method:'GET',
+        data:data,
+        ...options
+    })
+}

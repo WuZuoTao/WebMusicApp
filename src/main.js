@@ -5,6 +5,7 @@ import ElementUI  from 'element-ui'
 import VueRouter from 'vue-router'
 import router from './router/index'
 
+
 // 引入全局样式
 import '../src/style/iconfont/iconfont.css'
 import 'element-ui/lib/theme-chalk/index.css';

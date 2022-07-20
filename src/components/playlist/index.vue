@@ -38,6 +38,7 @@ export default {
       playlistApi(){
         playlist('',{params:{limit:10}}).then(res => {
           this.playList = res.result
+          console.log(res.result)
           this.playList.forEach((item) => {
             if(item.playCount > 10000 || item.playCount > 100000000){
               return item.playCount  = item.playCount > 10000 ? Math.floor(item.playCount / 10000)  +'万' : Math.floor(item.playCount / 100000000) + '亿'

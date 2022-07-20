@@ -47,7 +47,6 @@ export default {
                   return item.song.alias[0] ? item.song.alias[0] = '（'+ item.song.alias[0] + '）': ' '
                 })
                 this.newMusicList = res.result
-                console.log(res.result)
             })
         }
     }
